@@ -53,7 +53,6 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
         setIsLoading(false);
       }).catch((error) => {
         console.error('Error fetching user data:', error);
-        logout();
       });
   },[])
 
