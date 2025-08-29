@@ -46,10 +46,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
       fetchUser().then((user) => {
-        console.log(user)
-        localStorage.setItem('user', JSON.stringify(user));
-        const userData = localStorage.getItem('user');
-        setUser(JSON.parse(userData as string));
+        setUser(user);
         setIsLoading(false);
       }).catch((error) => {
         console.error('Error fetching user data:', error);
@@ -57,7 +54,6 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   },[])
 
   const login = (userData: User) => {
-    localStorage.setItem('user', JSON.stringify(userData));
     setUser(userData);
   };
 
@@ -70,7 +66,6 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       }
     }).then(() => {
     Cookies.remove('user');
-    localStorage.removeItem('user');
     }).catch(() => {
       console.log('error in logout ')
     })
