@@ -1,73 +1,166 @@
-# Welcome to your Lovable project
+# Note Taker
 
-## Project info
+A modern, full-stack note-taking web application built with React and TypeScript. This frontend application provides an intuitive interface for creating, managing, and organizing your notes with a clean, responsive design.
 
-**URL**: https://lovable.dev/projects/a4400659-9118-4da9-9788-1cfa76621818
+## 🛠️ Tech Stack
 
-## How can I edit this code?
+<div align="center">
 
-There are several ways of editing your application.
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-**Use Lovable**
+</div>
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a4400659-9118-4da9-9788-1cfa76621818) and start prompting.
 
-Changes made via Lovable will be committed automatically to this repo.
 
-**Use your preferred IDE**
+## ✨ Features
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Dark Mode**: Toggle between light and dark themes for comfortable viewing
+- **Multiple Authentication Options**: 
+  - OTP-based login for secure access
+  - Google OAuth integration for quick sign-in
+- **Complete Note Management**:
+  - Create notes with title, content, and custom tags
+  - Pin important notes to keep them at the top
+  - Unpin/Pin notes anytime for better organization
+  - Delete notes when no longer needed
+- **Responsive Design**: Works seamlessly across desktop and mobile devices
+- **Fast Performance**: Built with Vite for lightning-fast development and builds
+- **Type Safety**: Full TypeScript support for better code quality and developer experience
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠️ Technologies Used
 
-Follow these steps:
+- **Frontend Framework**: React 18
+- **Build Tool**: Vite
+- **Language**: TypeScript
+- **UI Components**: shadcn/ui
+- **Styling**: Tailwind CSS
+- **Development**: Hot Module Replacement (HMR)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🚀 Getting Started
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Prerequisites
 
-# Step 3: Install the necessary dependencies.
-npm i
+Make sure you have the following installed:
+- Node.js (version 16 or higher)
+- npm or yarn package manager
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+**Install Node.js with nvm** (recommended):
+```bash
+# Install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+
+# Install and use the latest LTS version of Node.js
+nvm install --lts
+nvm use --lts
+```
+
+### Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/utkarshml/notes-frontend.git
+   ```
+
+2. **Navigate to the project directory**:
+   ```bash
+   cd notes-frontend
+   ```
+
+3. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+
+The application will be available at `http://localhost:5173` (or another port if 5173 is busy).
+
+## 📝 Available Scripts
+
+- `npm run dev` - Start the development server with hot reload
+- `npm run build` - Build the project for production
+- `npm run preview` - Preview the production build locally
+- `npm run lint` - Run ESLint to check code quality
+
+## 🎨 Development
+
+Clone this repository and work with your preferred IDE:
+
+```bash
+# Clone the repository
+git clone https://github.com/utkarshml/notes-frontend.git
+
+# Navigate to project directory
+cd notes-frontend
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+You can also edit files directly in GitHub using the edit button (pencil icon) or use GitHub Codespaces for a cloud-based development environment.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🌍 Deployment
 
-**Use GitHub Codespaces**
+Build the project for production:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm run build
+```
 
-## What technologies are used for this project?
+The built files will be in the `dist` directory, ready for deployment to any static hosting service.
 
-This project is built with:
+## 📁 Project Structure
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```
+note-taker/
+├── public/                 # Static assets
+├── src/                   # Source code
+│   ├── components/        # Reusable UI components
+│   ├── pages/            # Application pages
+│   ├── hooks/            # Custom React hooks
+│   ├── utils/            # Utility functions
+│   ├── types/            # TypeScript type definitions
+│   ├── services/         # API services and auth
+│   └── styles/           # Global styles
+├── package.json          # Dependencies and scripts
+├── tsconfig.json         # TypeScript configuration
+├── tailwind.config.js    # Tailwind CSS configuration
+└── vite.config.ts        # Vite configuration
+```
 
-## How can I deploy this project?
+## 🤝 Contributing
 
-Simply open [Lovable](https://lovable.dev/projects/a4400659-9118-4da9-9788-1cfa76621818) and click on Share -> Publish.
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add some amazing feature'`)
+5. Push to the branch (`git push origin feature/amazing-feature`)
+6. Open a Pull Request
 
-## Can I connect a custom domain to my Lovable project?
+## 📄 License
 
-Yes, you can!
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 👤 Author
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+**Utkarsh** - [@utkarshml](https://github.com/utkarshml)
+
+## 🙏 Acknowledgments
+
+- Built with [React](https://reactjs.org/) and [Vite](https://vitejs.dev/)
+- UI components from [shadcn/ui](https://ui.shadcn.com/)
+- Styled with [Tailwind CSS](https://tailwindcss.com/)
+- Authentication powered by Google OAuth and OTP services
+
+---
+
+⭐ **Star this repository if you found it helpful!**
